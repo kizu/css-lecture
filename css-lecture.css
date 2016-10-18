@@ -1,0 +1,108 @@
+/* Generic overrides */
+
+p,
+li {
+    line-height: 1.4;
+}
+
+li {
+    margin-bottom: 0.5em;
+}
+
+.slide.cover, .slide.shout { background: #FFF; }
+.slide.shout h2 { color: #000; }
+.slide.shout h2 a { color: #52a2df; }
+.slide pre > code { white-space: pre-wrap }
+
+.next ~ li:not(.next) {
+    margin-top: 1em;
+}
+.next ~ li:not(.next):before {
+    visibility: hidden;
+}
+
+.textBefore,
+.textAfter,
+.aLotOfText,
+.secondLine {
+    display: none;
+}
+
+.textBefore,
+.textAfter {
+    display: inline-flex;
+    max-width: 0;
+    overflow: hidden;
+    -webkit-transition: width .5s, max-width .5s;
+            transition: width .5s, max-width .5s;
+}
+
+.slide ol li, .slide ul li {
+    text-indent: 0;
+}
+
+.slide ol li:before, .slide ul li:before {
+    float: left;
+    margin-left: -2em;
+}
+
+img.place {
+    margin-top: -16px;
+}
+
+
+.Exploding iframe {
+    width: 100%;
+    height: 100%;
+    transform: none !important;
+    z-index: auto !important;
+}
+
+.Exploding h2 {
+    opacity: 0;
+}
+
+#Syntax mark {
+    border-left: 2px solid transparent;
+    padding-left: 1ex;
+}
+
+#Syntax code:first-child mark {
+    border-left-color: currentcolor;
+    padding-bottom: 8ex;
+    margin-bottom: -8ex;
+}
+
+#Cover {
+    text-align: center;
+}
+#Cover h2 span {
+    display: block;
+}
+
+#Cover h2 span:first-child {
+    font-size: 2.9em;
+    margin-bottom: 0.35em;
+    margin-top: 0.6em;
+}
+
+#Cover h2 {
+    margin-bottom: 1.6em;
+}
+
+#Cover p {
+    margin: 0;
+    color: rgba(0, 0, 0, 0.65);
+}
+
+.no-numbers code:before {
+    display: none;
+}
+
+.Grid h2 {
+    display: none;
+}
+.Grid code {
+    word-wrap: break-word;
+    white-space: pre-wrap;
+}
